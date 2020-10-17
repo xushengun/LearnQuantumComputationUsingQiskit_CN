@@ -9,23 +9,27 @@
 ### Github:https://github.com/xushengun/
 ### 日期:20201016
 
-前言
+#### 前言
 来自 Qiskit 社区团队的问候!本教程是 Qiskit 的大学量子算法/计 算课程的补充:
 1. 量子算法背后的数学
 2. 当今非容错量子设备的细节
 3. 用 Qiskit 编写代码并在 IBM 的云量子 系统上实现量子算法
 
-关于本教程
+#### 关于本教程
 这是一个免费的数字版教程，在使用 Qiskit SDK 的同时通过本教程教授量子计算的概念。
 
-QisKit Textbook的联系方式
+#### 版权
+虽然在[QisKit TextBook](https://qiskit.org/textbook/)的站点上没有明确指出使用哪一授权。
+如若在没有异议的情况下，本中文版沿用[qiskit-textbook](https://github.com/qiskit-community/qiskit-textbook)的[Apache License 2.0](http://github.com/qiskit-community/qiskit-textbook/blob/master/LICENSE.txt)。
+
+#### QisKit Textbook的联系方式
 如果您对本教程有任何疑问或建议，或者想将其纳入您的课程表，请联系 Frank Harkins(Francis.Harkins@ibm.com)。本着开放源代码的精神，在本教程的[GitHub](https://github.com/qiskit-community/qiskit-textbook)存储库中欢迎任何章节的贡献。
 
-贡献者
+#### 贡献者
 本教程是多人工作的结果。如果在工作中使用本教程，请引用 bib 文件或直接 引用:
 Abraham Asfaw, Luciano Bello, Yael Ben-Haim, Sergey Bravyi, Lauren Capelluto, Almudena Carrera Vazquez, Jack Ceroni, Richard Chen, Albert Frisch, Jay Gambetta, Shelly Garion, Leron Gil, Salvador De La Puente Gonzalez, Francis Harkins, Takashi Imamichi, David McKay, Antonio Mezzacapo, Zlatko Minev, Ramis Movassagh, Giacomo Nannicni, Paul Nation, Anna Phan, Marco Pistoia, Arthur Rattew, Joachim Schaefer, Javad Shabani, John Smolin, Kristan Temme, Madeleine Tod, Stephen Wood, James Wootton.
 
-什么是量子?
+#### 什么是量子?
 “量子物理学”是一个被广泛使用但却很少被人理解的术语。它是一种数学模 型，最初用于描述实验室中微小物体的行为，其揭露了先前“经典”物理学理
 论的缺陷。量子理论解释了这种行为，并为我们提供了一个更完整的宇宙图
 像。人们已经意识到可以利用这种以前无法解释的行为来进行某些之前认为不
