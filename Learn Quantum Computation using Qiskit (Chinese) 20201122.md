@@ -1,8 +1,14 @@
-Learn Quantum Computation using Qiskit（中文版）
+<p align="left"><font size=20>Learn Quantum Computation using Qiskit（中文版）</font></p>
+  
 
-IBM
 
-中文版译者：徐柳青
+
+<p align="right"><font size=5>https://qiskit.org/</font></p>
+
+  
+
+
+<center><font size=5>中文版译者：徐柳青
 
 电话：18616020096（Wechat）
 
@@ -10,10 +16,10 @@ IBM
 
 Github：https://github.com/xushengun/
 
-日期：20201016
+日期：20201016</font></center>
 
-前言
-====
+
+# 前言
 
 ![](pics/media/image1.png)
 
