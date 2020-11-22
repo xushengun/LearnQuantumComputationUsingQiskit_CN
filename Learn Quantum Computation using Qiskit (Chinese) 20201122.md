@@ -1,5 +1,5 @@
-<p align="left"><font size=20>Learn Quantum Computation using Qiskit（中文版）</font></p>
-  
+<center><font size=20>Learn Quantum Computation using Qiskit（中文版）</font></center>
+
 
 
 
@@ -8,15 +8,15 @@
   
 
 
-<center><font size=5>中文版译者：徐柳青
+<center><font size=5>中文版译者：徐柳青</font></center>
 
-电话：18616020096（Wechat）
+<center><font size=5>电话：18616020096（Wechat）</font></center>
 
-电子邮件：<45045590@qq.com>
+<center><font size=5>电子邮件：<45045590@qq.com></font></center>
 
-Github：https://github.com/xushengun/
+<center><font size=5>Github：https://github.com/xushengun/</font></center>
 
-日期：20201016</font></center>
+<center><font size=5>日期：20201016</font></center>
 
 
 # 前言
@@ -125,7 +125,11 @@ tree）。如果您对已经熟悉了这些材料，那么请快速浏览一下�
 
 假设我们有一枚均匀的硬币，以包含头像（Head）的一面为正面。然后抛掷这一均匀硬币并观察结果，会发看到正面H及反面T的机率各占50%。我们将这一结果画在一个概率树上：
 
-![](pics/media/image7.png)我们在每个分叉的末端画出结果并在每个分叉上标注出现的概率。与上述步骤相同，如果从反面开始抛掷这个硬币，仍各有50%的机会看到正面或反面。
+![](pics/media/image7.png)
+
+
+
+我们在每个分叉的末端画出结果并在每个分叉上标注出现的概率。与上述步骤相同，如果从反面开始抛掷这个硬币，仍各有50%的机会看到正面或反面。
 
 ![](pics/media/image8.png)
 
@@ -1160,13 +1164,17 @@ F**）之上的一组对象（包括：向量和点），满足两个条件。�
 addition**）的结果仍然在**V**之内。第二，对于\|a⟩ ∈ V与某一n ∈
 F的标量乘法（**scalar multiplication**）的结果仍然在**V**之内。
 
-现在，我们将通过一个基本示例来阐明刚才的定义。让我们证明集R^2^是数域R上的向量空间，我们断言：
+现在，我们将通过一个基本示例来阐明刚才的定义。让我们证明集$\mathbb{R}^2$是数域$\mathbb{R}$上的向量空间，我们断言：
 
-$$\left( \frac{x_{1}}{y_{1}} \right) + \left( \frac{x_{2}}{y_{2}} \right) = \left( \frac{x_{1} + x_{2}}{y_{1} + y_{2}} \right)$$
+$$
+\left( \frac{x_{1}}{y_{1}} \right) + \left( \frac{x_{2}}{y_{2}} \right) = \left( \frac{x_{1} + x_{2}}{y_{1} + y_{2}} \right)
+$$
 
-上述公式包含于R^2^。情况显然如此，两个实数的和仍然是实数，使得新形成向量的两个分量都是实数，由此包含于R^2^中的向量被定义。我们还可以断言：
+上述公式包含于$\mathbb{R}^2$。情况显然如此，两个实数的和仍然是实数，使得新形成向量的两个分量都是实数，由此包含于$\mathbb{R}^2$中的向量被定义。我们还可以断言：
 
-$$n\left| v \right\rangle = \left( \frac{\text{nx}}{\text{ny}} \right) \in \text{V\ \ \ }\forall n \in R$$
+$$
+n\left| v \right\rangle = \left( \frac{\text{nx}}{\text{ny}} \right) \in \text{V\ \ \ }\forall n \in R
+$$
 
 这也成立，因为实数和实数的乘积是实数，使得整个新的向量是实数，从而证明了这个表述。
 
@@ -1194,7 +1202,8 @@ $$M = \left\lbrack \begin{matrix}
 
 我们可以执行矩阵乘法将一个矩阵乘以一个向量。通常，两个矩阵之间的矩阵乘法涉及将第一个矩阵中每一行的元素乘以第二个矩阵中每一列的每一个元素然后将乘积相加，该乘积成为新矩阵中对应行列中的一个元素，以此类推。以下是矩阵乘法（叉积）的一个示例：
 
-$$\left( \begin{matrix}
+$$
+\left( \begin{matrix}
 2 \\
 5 \\
 \end{matrix}\begin{matrix}
@@ -1206,22 +1215,25 @@ $$\left( \begin{matrix}
 \end{matrix}\begin{matrix}
 1 \\
 \ 1 \\
-\end{matrix} \right) = \left( \begin{matrix}
+\end{matrix} \right) 
+= \left( \begin{matrix}
 \left( 2 \right)\left( - 3 \right) + \left( 0 \right)\left( 2 \right) \\
 \left( 5 \right)\left( - 3 \right) + \left( - 1 \right)\left( 2 \right) \\
 \end{matrix}\ \begin{matrix}
 \left( 2 \right)\left( 1 \right) + \left( 0 \right)\left( 1 \right) \\
 \left( 5 \right)\left( 1 \right) + \left( - 1 \right)\left( 1 \right) \\
-\end{matrix} \right) = \left( \begin{matrix}
+\end{matrix} \right) 
+= \left( \begin{matrix}
  - 6\  \\
  - 17 \\
 \end{matrix}\begin{matrix}
 2 \\
 \ 4 \\
-\end{matrix} \right)$$
+\end{matrix} \right)
+$$
 
 为了进行量子计算，通过对量子态向量应用一个矩阵来对其操作。一个向量就是一个只有一列的矩阵。因此要将一个矩阵应用于一个向量，需要遵循上面描述的相同矩阵乘法过程。我们可以通过应用一系列的量子门（**quantum
-gates**）在量子电脑上操纵量子比特。每个量子门都被表示为可应用于态向量的矩阵，从而改变态向量的状态。例如，经常可见的量子门是Pauli-X门，用矩阵的方式如下：
+gate**）在量子电脑上操纵量子比特。每个量子门都被表示为可应用于态向量的矩阵，从而改变态向量的状态。例如，经常可见的量子门是Pauli-X门，用矩阵的方式如下：
 
 $$\sigma_{x} = \left( \begin{matrix}
 0 \\
@@ -1980,7 +1992,7 @@ $$9213\mathbf{=}\left( 1\mathbf{\times}2^{13} \right)\mathbf{+}\left( 0\mathbf{\
 
 现在我们的回路中有一些东西，我们来看一下。
 
-qc_output.draw()
+> qc_output.draw()
 
 ![](pics/media/image41.png)
 
@@ -2159,13 +2171,13 @@ $$\frac{\begin{matrix}
 
 事实上，到目前为止剩下的事情我们都已经知道如何去做了。这是因为，如果您把所有的东西都分解成加2个比特，那么就只需要计算4中可能情况。以下是四中基本的和，其中把所有的答案用来2个比特表示，以保持一致。
 
-0+0 = 00 (十进制 0+0=0)
+<center>0+0 = 00 (十进制 0+0=0)</center>
 
-0+1 = 01 (十进制 0+1=1)
+<center>0+1 = 01 (十进制 0+1=1)</center>
 
-1+0 = 01 (十进制 1+0=1)
+<center>1+0 = 01 (十进制 1+0=1)</center>
 
-1+1 = 10 (十进制 1+1=2)
+<center>1+1 = 10 (十进制 1+1=2)</center>
 
 这叫做半加器（**half
 adder**）。如果我们的计算机可以实现，并且如果该计算机可以把这些操作链接在一起，那么这一计算机就可以累加任一值。
@@ -2185,13 +2197,13 @@ gate）。上文中我们已经使用了非门，但仅有非门并不足以使�
 
 为了了解我们需要什么，再看看半加器需要做什么。
 
-0+0 = 00
+<center>0+0 = 00</center>
 
-0+1 = 01
+<center>0+1 = 01</center>
 
-1+0 = 01
+<center>1+0 = 01</center>
 
-1+1 = 10
+<center>1+1 = 10</center>
 
 上面的四个答案中最右边的比特完全取决于我们添加的两个比特是相同的还是不同的。对于0+0和1+1的答案最右边的比特是0。对于0+1和1+0，当不同的比特值相加时，最右边的比特是1。
 
@@ -2379,7 +2391,7 @@ gate**）。
 1.3 呈现量子比特的状态
 ----------------------
 
-现在您对比特和所熟悉的数字计算机的工作原理有了一些了解。在现代软件中使用的所有复杂变量、对象和数据结构基本上都是一大堆比特。从事量子计算的人称之为经典变量。使用经典变量的计算机，就像您用来阅读这篇文章的计算机，称之为经典计算机。
+现在您对比特和所熟悉的数字计算机的工作原理有了一些了解。也就能理解在现代软件中使用的所有复杂变量、对象和数据结构基本上都是一大堆比特。从事量子计算的人称之为经典变量。使用经典变量的计算机，就像您用来阅读这篇文章的计算机，称之为经典计算机。
 
 在量子计算机中，我们的基本变量是量子比特：比特的量子变体。量子比特所有的限制与经典比特完全相同：只能存储单个二进制比特的信息，并且只能输出0或1。然而，量子比特也可以被操纵，但只能用量子力学来描述。这一点给我们提供了新的选择，让我们可以找到设计算法的新方法。
 
@@ -5937,7 +5949,6 @@ Alice和Bob分别处理该纠缠量子比特对中一个量子比特（分别标
 $$|\psi\rangle = \frac{1}{\sqrt{2}} (|0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B)$$
 
 经过处理后会生成一个三量子比特系统，其中Alice拥有前两个，而Bob拥有最后一个。
-
 $$
 |q\rangle \otimes |\psi\rangle = \frac{1}{\sqrt{2}} (a |0\rangle \otimes (|00\rangle + |11\rangle) + b |1\rangle \otimes (|00\rangle + |11\rangle))\\
 = \frac{1}{\sqrt{2}} (a|000\rangle + a|011\rangle + b|100\rangle + b|111\rangle)$$
@@ -6135,7 +6146,7 @@ Coding，SDC）协议。我们首先使用Qiskit的模拟器来测试量子回�
 量子隐形传态是通过两个经典通信和一个贝尔对将一个处于态$\left| \psi \right\rangle$的量子比特从一个地方传送到另一个地方的过程。也就说我么可以将这一过程认可为一个协议，其可以在共享纠缠态帮助下，在一个位置摧毁一个量子比特的量子态，然后在另一个遥远的位置重建。超密编码是一种程序，允许某人仅使用单个量子比特通信就可以向另一方发送两个经典比特。
 
   **Teleportation**   **Superdense Coding**
-  ------------------- -----------------------
+------------------- -----------------------
   Transmit one        Transmit two
   qubit using two     classical bits
   classical bits      using one qubit
@@ -7546,7 +7557,6 @@ $$\left| \psi_{2} \right\rangle = \frac{1}{2}(\left| 00 \right\rangle_{1} + \lef
 
 3\.
 对于字串$b = 11$，查询函数实现为$Q_{f} = CX_{1_{a}2_{a}}CX_{1_{a}2_{b}}CX_{1_{b}2_{a}}CX_{1_{b}2_{b}}$：
-
 $$ {\left| \psi_{3} \right\rangle = \frac{1}{2}(\left| 00 \right\rangle_{1}\left| 0 \oplus 0 \oplus 0,0 \oplus 0 \oplus 0 \right\rangle_{2}
 }{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  + \left| 01 \right\rangle_{1}\left| 0 \oplus 0 \oplus 1,0 \oplus 0 \oplus 1 \right\rangle_{2}
 }{\text{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }{+ \left| 10 \right\rangle}_{1}\left| 0 \oplus 1 \oplus 0,0 \oplus 1 \oplus 0 \right\rangle_{2}
@@ -14026,7 +14036,7 @@ cost_function_C(x,G)和第5.a/5.b节中的数据评估）。
 6.  Spall, J. C. (1992), [IEEE Transactions on Automatic Control, vol.
     
 > 37(3), pp. 332--341](https://ieeexplore.ieee.org/document/119632).
-    
+
 7.  Michael Streif and Martin Leib \"Training the quantum approximate
     > optimization algorithm without access to a quantum processing
     > unit\" (2020) [Quantum Sci. Technol. 5
