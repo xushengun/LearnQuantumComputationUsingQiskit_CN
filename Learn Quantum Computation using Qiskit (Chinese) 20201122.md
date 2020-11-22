@@ -1629,7 +1629,9 @@ Other Works: Hermann Grassmann, Lloyd C. Kannenberg: 9780812692761
 
 事实上上面讲的都对！但如果您选择了第二个，表明您已经在沿着正确的方向思考了。信息可以存储和处理为一系列的0和1是一个巨大的概念障碍，但今天大多数人甚至不加思考就知道了这一点。以此为出发点，我们可以开始想象符合量子力学规则的比特。这些量子比特（***qubit***），可以让我们以新的、不同的方式处理信息。
 
-![](pics/media/image38.png)我们将开始深入研究量子比特的世界，为此需要某种方法来跟踪使用量子门时会发生什么。最有效的方法是使用向量和矩阵的数学语言。
+![](pics/media/image38.png)
+
+我们将开始深入研究量子比特的世界，为此需要某种方法来跟踪使用量子门时会发生什么。最有效的方法是使用向量和矩阵的数学语言。
 
 对于已经熟悉向量和矩阵的读者来说，本章将会产生预期结果。那些不熟悉的人可能也不会有什么问题，可以偶尔参考一下前一章中量子计算的线性代数介绍可能会很有用。
 
@@ -3457,7 +3459,7 @@ e^{i\phi} \\
 >
 > 输出：
 
-![](pics/media/image74.tiff)
+![](pics/media/image74.png)
 
 在Qiskit中，我可以通过rz(phi, qubit)来指定一个R~ϕ~-gate：
 
@@ -3471,7 +3473,7 @@ e^{i\phi} \\
 >
 > 输出：
 
-![](pics/media/image75.tiff)
+![](pics/media/image75.png)
 
 ### 6. I、S和T-门（I、S、T-gates）
 
@@ -3534,7 +3536,7 @@ $$\text{SS}\left| q \right\rangle = Z\left| q \right\rangle$$
 >
 > 输出：
 
-![](pics/media/image76.tiff)
+![](pics/media/image76.png)
 
 #### 6.3 T-gate
 
@@ -3564,7 +3566,7 @@ e^{- \frac{\text{iπ}}{4}} \\
 >
 > 输出：
 
-![](pics/media/image77.tiff)
+![](pics/media/image77.png)
 
 与S-gate一样，T-gate有时被称为$\sqrt[4]{Z}$-gate。在Qiskit中，您可以使用qiskit_textbook中的小部件把玩本章中介绍的所有量子门：
 
@@ -3576,7 +3578,7 @@ e^{- \frac{\text{iπ}}{4}} \\
 >
 > 输出：
 
-![](pics/media/image78.tiff)
+![](pics/media/image78.png)
 
 ### 7. 通用U-gate
 
@@ -3744,7 +3746,7 @@ from qiskit.visualization import plot_bloch_multivector, plot_histogram
 >
 > 输出：
 
-![](pics/media/image80.tiff)
+![](pics/media/image80.png)
 
 每一个量子比特都处于\|+⟩，所以我们应该看到向量：
 
@@ -3777,7 +3779,7 @@ $$\left| + + + \right\rangle = \frac{1}{\sqrt{8}}\begin{bmatrix}
 >
 > 输出：
 
-![](pics/media/image81.tiff)
+![](pics/media/image81.png)
 
 以上代码的输出正是我们所期望的结果。
 
@@ -3836,7 +3838,7 @@ $$X\left| 0 \right\rangle = \left\lbrack \begin{matrix}
 >
 > 输出：
 
-![](pics/media/image82.tiff)
+![](pics/media/image82.png)
 
 我们可以用张量积模拟这一操作（H&X）：
 
@@ -3936,7 +3938,7 @@ H \\
 >
 > 输出：
 
-![](pics/media/image83.tiff)
+![](pics/media/image83.png)
 
 如果我们仅想要每次只在一个量子比特上应用一个量子门（如下所示），使用单位矩阵进行张量积：
 
@@ -3990,7 +3992,7 @@ I \\
 >
 > 输出：
 
-![](pics/media/image84.tiff)
+![](pics/media/image84.png)
 
 > \# Simulate the unitary
 >
@@ -4004,7 +4006,7 @@ I \\
 >
 > 输出：
 
-![](pics/media/image85.tiff)
+![](pics/media/image85.png)
 
 ### 3. 多量子比特门
 
@@ -4915,7 +4917,7 @@ blocks）构建有用的量子回路。但有时我们可能不能获取想要�
 >
 > 输出：
 
-![](pics/media/image116.tiff)
+![](pics/media/image116.png)
 
 代码中的c和t是控制端和目标端量子比特。然而在IBM的Q设备上，唯一一类可以直接应用的双量子比特门是CNOT，所以我们需要找到将其转换为其他类型的方法。
 
@@ -4939,7 +4941,7 @@ $$HXH = Z,HZH = X$$
 >
 > 输出：
 
-![](pics/media/image117.tiff)
+![](pics/media/image117.png)
 
 用更加通俗的方式来讲，我们可以将单个CNOT转换为任一布洛赫球中旋转角度$\pi$的受控版本，仅通过在其前后放置正确的旋转角度。例如，一个受控Y门：
 
@@ -4957,7 +4959,7 @@ $$HXH = Z,HZH = X$$
 >
 > 输出：
 
-![](pics/media/image118.tiff)
+![](pics/media/image118.png)
 
 以及一个受控H门：
 
@@ -4975,7 +4977,7 @@ $$HXH = Z,HZH = X$$
 >
 > 输出：
 
-![](pics/media/image119.tiff)
+![](pics/media/image119.png)
 
 ### 2. 交换量子比特
 
@@ -4996,7 +4998,7 @@ gate）完成。
 >
 > 输出：
 
-![](pics/media/image120.tiff)
+![](pics/media/image120.png)
 
 上面的代码中直接调用了这一量子门，现在让我们看看如何使用标准量子门集来实现SWAP
 gate。
@@ -5015,7 +5017,7 @@ gate。
 >
 > 输出：
 
-![](pics/media/image121.tiff)
+![](pics/media/image121.png)
 
 这就产生让量子比特a处于态\|0⟩以及量子比特b处于态\|1⟩的效果。至少在这一情况下，完成了交换（SWAP）操作。
 
@@ -5031,7 +5033,7 @@ gate。
 >
 > 输出：
 
-![](pics/media/image122.tiff)
+![](pics/media/image122.png)
 
 在这两个过程中可以看到，第一个步骤的量子门不会改变另一个的初始状态。例如，最后的cx(b,a)要求当我们从a至b交换\|1⟩时，不会对\|1⟩是否在b上产生影响。
 
@@ -5049,7 +5051,7 @@ gate。
 >
 > 输出：
 
-![](pics/media/image123.tiff)
+![](pics/media/image123.png)
 
 我们可以将这一过程当作开头包含无用qc.cx(b,a)的从a至b交换\|1⟩的过程。也可以将这一过程当作结尾包含无用qc.cx(b,a)的从b至a交换\|1⟩的过程。无论哪种方式，其结果是同时进行两种交换的过程。
 
@@ -5072,7 +5074,7 @@ gate分解为单量子比特旋转和受控非门的标准量子门集的方法�
 >
 > 输出：
 
-![](pics/media/image123.tiff)
+![](pics/media/image123.png)
 
 这一方法对态\|00⟩、\|01⟩、\|10⟩和\|11⟩起作用，如果这一方法对计算基的所有状态起作用，那么其必然对所有量子的装态普遍起作用。因此这一量子回路能够交换所有可能的双量子比特状态。
 
@@ -5092,7 +5094,7 @@ gate分解为单量子比特旋转和受控非门的标准量子门集的方法�
 >
 > 输出：
 
-![](pics/media/image124.tiff)
+![](pics/media/image124.png)
 
 上面的代码是获得SWAP gate的同等有效方法。
 
@@ -5125,7 +5127,7 @@ gate的方法与上述的方法完全相同。
 >
 > 输出：
 
-![](pics/media/image125.tiff)
+![](pics/media/image125.png)
 
 如果控制端量子比特处于态\|0⟩，我们将获得紧随$R_{y}\left( \theta/2 \right)$后的逆$R_{y}\left( - \theta/2 \right)$。最终影响还是无关紧要。如果控制端量子比特处于态\|1⟩，在X-gate前后的ry(-theta/2)会生效。这会产生改变y旋转方向的影响，并且生成第二个$R_{y}\left( \theta/2 \right)$。因此在这一情况下的净影响为使得$R_{y}\left( \theta/2 \right)$进行了受控的旋转。
 
@@ -8168,7 +8170,7 @@ qc = QuantumCircuit(3)
 >
 > 输出：
 
-![](pics/media/image188.tiff)
+![](pics/media/image188.png)
 
 然后，如果量子比特1处于态$|1\rangle$时再转四分之一圈：
 
@@ -8178,7 +8180,7 @@ qc = QuantumCircuit(3)
 >
 > 输出：
 
-![](pics/media/image189.tiff)
+![](pics/media/image189.png)
 
 如果最高有效量子比特1是$\left| 1 \right\rangle$时，再旋转八分之一圈：
 
@@ -8188,7 +8190,7 @@ qc = QuantumCircuit(3)
 >
 > 输出：
 
-![](pics/media/image190.tiff)
+![](pics/media/image190.png)
 
 在处理完这一量子比特之后，将其忽略并重复这一过程，对量子比特1和2使用相同的逻辑：
 
@@ -8202,7 +8204,7 @@ qc = QuantumCircuit(3)
 >
 > 输出：
 
-![](pics/media/image191.tiff)
+![](pics/media/image191.png)
 
 最后，我们必须交换量子比特0和2来完成QFT：
 
@@ -8212,7 +8214,7 @@ qc = QuantumCircuit(3)
 >
 > 输出：
 
-![](pics/media/image192.tiff)
+![](pics/media/image192.png)
 
 #### 8.2 通用QFT函数
 
@@ -8248,7 +8250,7 @@ qc = QuantumCircuit(3)
 >
 > 输出：
 
-![](pics/media/image193.tiff)
+![](pics/media/image193.png)
 
 我们可以下面的小部件来查看这一回路如何因量子比特的数量而缩放：
 
@@ -8289,7 +8291,7 @@ qc = QuantumCircuit(3)
 >
 > qc.draw(\'mpl\')
 
-![](pics/media/image194.tiff)
+![](pics/media/image194.png)
 
 很简单吧！在一个函数内部调用其自身称为递归（*recursion*），这一方法可以极大的简化代码。使用下面的小部件，可以再次看看回路是如何缩放的：
 
@@ -8692,7 +8694,7 @@ $$\theta = \frac{1}{8}$$
 >
 > 输出：
 
-![](pics/media/image207.tiff)
+![](pics/media/image207.png)
 
 下一步我们执行受控幺正操作。**记住**：Qiskit对量子比特的排序与上图相反。
 
@@ -8710,7 +8712,7 @@ qpe.draw(output=\'mpl\')
 
 输出：
 
-![](pics/media/image208.tiff)
+![](pics/media/image208.png)
 
 我们应用逆量子傅立叶变换来转换计数寄存器的状态。此处给出$\text{QFT}^{\dagger}$的代码：
 
@@ -8752,7 +8754,7 @@ qpe.draw(output=\'mpl\')
 >
 > 输出：
 
-![](pics/media/image209.tiff)
+![](pics/media/image209.png)
 
 #### 2.2 结果
 
@@ -8768,7 +8770,7 @@ qpe.draw(output=\'mpl\')
 >
 > 输出：
 
-![](pics/media/image210.tiff)
+![](pics/media/image210.png)
 
 可以看到我们得到了一个确定的结果（001），转化成小数为1。现在需要通过将$2^{n}$除以结果（1）来获取$\theta$：
 
@@ -8824,7 +8826,7 @@ $$\theta = \frac{1}{2^{3}} = \frac{1}{8}$$
 >
 > 输出：
 
-![](pics/media/image211.tiff)
+![](pics/media/image211.png)
 
 > \# Let\'s see the results!
 >
@@ -8840,7 +8842,7 @@ $$\theta = \frac{1}{2^{3}} = \frac{1}{8}$$
 >
 > 输出：
 
-![](pics/media/image212.tiff)
+![](pics/media/image212.png)
 
 我们期望结果为$\theta = 0.3333\cdots$，可以看到最有可能的结果是010(bin)
 = 2(dec)和011(bin) = 3(dec)。这两个结果分别告诉我们$\theta = 0.25$（off
@@ -8895,7 +8897,7 @@ by 25%）以及$\theta = 0.375$（off by
 
 ![](pics/media/image213.png)
 
-![](pics/media/image214.tiff)
+![](pics/media/image214.png)
 
 > \# Let\'s see the results!
 >
@@ -8911,7 +8913,7 @@ by 25%）以及$\theta = 0.375$（off by
 >
 > 输出：
 
-![](pics/media/image215.tiff)
+![](pics/media/image215.png)
 
 现在最可能的两个测量值是01011（十进制11）和01010（十进制10）。测量这些结果会告诉我们$\theta$是：
 
@@ -8930,7 +8932,7 @@ $\theta = \frac{10}{2^{5}} = 0.313$
 >
 > 输出：
 
-![](pics/media/image209.tiff)
+![](pics/media/image209.png)
 
 > \# Load our saved IBMQ accounts and get the least busy backend device
 > with less than or equal to n qubits
@@ -8973,7 +8975,7 @@ $\theta = \frac{10}{2^{5}} = 0.313$
 >
 > 输出：
 
-![](pics/media/image216.tiff)
+![](pics/media/image216.png)
 
 我们希望看到最有可能的结果是001，从模拟器中获得的期望结果。与模拟器不同的是，测量所得概率给出的不是001，这是由于量子计算机中的噪声和量子门误差导致的结果。
 
@@ -9353,7 +9355,7 @@ $$U|y\rangle = |ay\ mod\ 15\rangle$$
 >
 > 输出：
 
-![](pics/media/image227.tiff)
+![](pics/media/image227.png)
 
 我们可以使用Python内建的Fractions模块将浮点数转换为分数对象：
 
@@ -9922,7 +9924,7 @@ $$H^{\bigotimes n}U_{0}H^{\bigotimes n} = U_{s}$$
 >
 > 输出：
 
-![](pics/media/image244.tiff)
+![](pics/media/image244.png)
 
 将预言应用于$|w\rangle = |00\rangle$：
 
@@ -9940,7 +9942,7 @@ $$H^{\bigotimes n}U_{0}H^{\bigotimes n} = U_{s}$$
 >
 > 输出：
 
-![](pics/media/image245.tiff)
+![](pics/media/image245.png)
 
 在两个量子比特上都应用一个阿达马操作：
 
@@ -9952,7 +9954,7 @@ $$H^{\bigotimes n}U_{0}H^{\bigotimes n} = U_{s}$$
 >
 > 输出：
 
-![](pics/media/image246.tiff)
+![](pics/media/image246.png)
 
 应用$U_{s}$反射：
 
@@ -9966,7 +9968,7 @@ $$H^{\bigotimes n}U_{0}H^{\bigotimes n} = U_{s}$$
 >
 > 输出：
 
-![](pics/media/image247.tiff)
+![](pics/media/image247.png)
 
 在两个量子比特上都应用最后的H-gate：
 
@@ -9978,7 +9980,7 @@ $$H^{\bigotimes n}U_{0}H^{\bigotimes n} = U_{s}$$
 >
 > 输出：
 
-![](pics/media/image248.tiff)
+![](pics/media/image248.png)
 
 可以看到我们已经组装出了正确的回路。
 
@@ -9996,7 +9998,7 @@ $$H^{\bigotimes n}U_{0}H^{\bigotimes n} = U_{s}$$
 >
 > vector2latex(statevec, pretext=\"\|\\\\psi\\\\rangle =\")
 
-![](pics/media/image249.tiff)
+![](pics/media/image249.png)
 
 现在测量其状态，并创建相应的直方图：
 
@@ -10060,7 +10062,7 @@ $$H^{\bigotimes n}U_{0}H^{\bigotimes n} = U_{s}$$
 >
 > 输出：
 
-![](pics/media/image251.tiff)
+![](pics/media/image251.png)
 
 我们验证了在大多数情况下可以找出元素$|00\rangle$。其他是由量子计算中的错误产生的结果。
 
@@ -10181,7 +10183,7 @@ operator）"：
 >
 > 输出：
 
-![](pics/media/image253.tiff)
+![](pics/media/image253.png)
 
 ##### 3.1.1 在模拟器中实验
 
@@ -13208,7 +13210,7 @@ plt.show()
 
 输出：
 
-![](pics/media/image289.tiff)
+![](pics/media/image289.png)
 
 注意！VQE结果与精确结果非常接近，因此精确的能量曲线隐藏在VQE曲线中。
 
@@ -13602,7 +13604,7 @@ $$\begin{matrix}
 >
 > 输出：
 
-![](pics/media/image290.tiff)
+![](pics/media/image290.png)
 
 ##### 5.2 最优判别态参数
 
@@ -13756,7 +13758,7 @@ $$U_{k,l}(\gamma) = C_{u1}( - 2\gamma)_{k,l}u1(\gamma)_{k}u1(\gamma)_{l}$$
 >
 > 输出：
 
-![](pics/media/image292.tiff)
+![](pics/media/image292.png)
 
 ##### 5.4 代价函数求值
 
@@ -13877,7 +13879,7 @@ $$U_{k,l}(\gamma) = C_{u1}( - 2\gamma)_{k,l}u1(\gamma)_{k}u1(\gamma)_{l}$$
 >
 > The cost function is distributed as:
 
-![](pics/media/image294.tiff)
+![](pics/media/image294.png)
 
 ###### 5b. 在真实设备上运行QAOA
 
@@ -13906,7 +13908,7 @@ $$U_{k,l}(\gamma) = C_{u1}( - 2\gamma)_{k,l}u1(\gamma)_{k}u1(\gamma)_{l}$$
 >
 > 输出：
 
-![](pics/media/image295.tiff)
+![](pics/media/image295.png)
 
 ####### 评估实验数据
 
@@ -13972,7 +13974,7 @@ $$U_{k,l}(\gamma) = C_{u1}( - 2\gamma)_{k,l}u1(\gamma)_{k}u1(\gamma)_{l}$$
 >
 > The cost function is distributed as:
 
-![](pics/media/image296.tiff)
+![](pics/media/image296.png)
 
 #### 6. 练习
 
@@ -15895,7 +15897,7 @@ bit）。辅助量子比特总是初始化为态$|0\rangle$。然而，可以在
 >
 > 输出：
 
-![](pics/media/image317.tiff)
+![](pics/media/image317.png)
 
 > counts = execute( qc_init+qc,
 > Aer.get_backend(\'qasm_simulator\')).result().get_counts()
@@ -15948,13 +15950,13 @@ RepetitionCode包含两个实现code的量子回路：两个可能逻辑比特�
 >
 > 输出：
 
-![](pics/media/image318.tiff)
+![](pics/media/image318.png)
 
 > code.circuit\[\'1\'\].draw()
 >
 > 输出：
 
-![](pics/media/image319.tiff)
+![](pics/media/image319.png)
 
 在这些量子回路中有两种类型的物理量子比特。在"编码量子比特"中逻辑状态被编码在三个物理量子比特上。"连接量子比特"用作校验测量的辅助量子比特。
 
