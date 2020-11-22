@@ -7144,7 +7144,7 @@ $$H\left| 1 \right\rangle = \frac{1}{\sqrt{2}}(\left| 0 \right\rangle - \left| 1
 
 使用求和符号，我们可以将其改写为：
 
-$$H\left| a \right\rangle = \sum_{a \in \{ 0,1\}}^{}{{( - 1)}^{a \bullet x}|x\rangle}$$
+$$H\left| a \right\rangle = \sum_{a \in \{ 0,1\}}^{}{{(-1)}^{a \bullet x}|x\rangle}$$
 
 对于两个量子比特，对每个量子比应用阿达马门执行一下转换：
 
@@ -22331,12 +22331,12 @@ dj_widget(size=\"large\", case=\"balanced\", hide_oracle=True)
 附件：在本地完全实现Qiskit TextBook
 ===================================
 
-因为pyscf库没有在Windows上实现，您可以利用Linux的Windows子系统（WSL）来完全在本地完全实现Qiskit
+因为pyscf库没有在Windows上实现，您可以利用Linux的Windows子系统（WSL）在本地完全实现Qiskit
 TextBook。
 
 WSL的安装过程请查阅：<https://docs.microsoft.com/zh-cn/windows/wsl/install-win10>
 
-建议在WSL中安装[Miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/)，在安装完成后先不用更改软件包的安装源。搜先，安装pyscf：
+建议在WSL中安装[Miniconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/)，在安装完成后先不用更改软件包的安装源。首先，安装pyscf：
 
 conda install -c pyscf pyscf
 
