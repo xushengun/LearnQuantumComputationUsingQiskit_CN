@@ -804,8 +804,7 @@ state）的向量$(|00\rangle + |11\rangle)/\sqrt{2}$，正是我们想要回路
 >
 > 输出：
 >
-> ![](pics/media/image27.png){width="3.7284722222222224in"
-> height="1.6069444444444445in"}
+> ![](pics/media/image27.png)
 
 我们可以测量两个量子比特，并把结果写入到经典寄存器的不同位中。
 
@@ -4111,8 +4110,7 @@ a_{01} \\
 >
 > 输出：
 >
-> ![](pics/media/image87.png){width="0.8375in"
-> height="0.5416666666666666in"}
+> ![](pics/media/image87.png)
 >
 > \# Let\'s see the result:
 >
