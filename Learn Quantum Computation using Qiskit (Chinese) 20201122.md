@@ -1570,7 +1570,7 @@ $$\Rightarrow \ \sum_{n = 0}^{\infty}f^{n}\left( 0 \right)\frac{x^{n}}{n!} = \su
 
 $$B^{2n} = {{(B}^{2})}^{n} = \mathbb{I}^{n}\mathbb{= I}$$
 
-$$B^{2n + 1} = {B{(B}^{2})}^{n} = B\mathbb{I}^{n} = B\mathbb{I =}B$$
+$$B^{2n + 1} = B{(B^{2})}^{n} = B\mathbb{I}^{n} = B\mathbb{I =}B$$
 
 代入这个新信息，得到:
 
